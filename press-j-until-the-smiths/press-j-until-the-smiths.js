@@ -1,7 +1,5 @@
 (function(){
-  
-  console.log('what');
-       
+         
   /* init this trash */
   
   var $window = $(window);
@@ -121,7 +119,6 @@
   
   var playSong = function(){
     if ( midiBuffer && !playSound ) {
-      console.log('song played');
       playSound = audioCtx.createBufferSource();
       playSound.buffer = midiBuffer;
       playSound.connect(audioCtx.destination);
